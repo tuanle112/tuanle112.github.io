@@ -1,27 +1,50 @@
 .TopNav {
-    width: 1500px;
+    width: 1520px;
     height: 100px;
     font-size: 15px;
     text-align: center;
-    
-
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0px 0px 10px;
+    align-items: center;
 }
 
 .TopNav li {
     display:inline-block;
+    
 }
 
 .TopNav a {
     padding: 15px 15px 15px 15px;
     font-weight: bold;
     text-decoration: none;
+    margin-right: 2rem;
     
 
+}
+nav {
+    top: 0px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+nav>ul li {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    float:left;
+    
 }
 
 
 
-ul li {
+
+nav a {
     display: inline-block;
     border: 3px solid #22b9a8;
     width: 150px;
@@ -31,9 +54,42 @@ ul li {
     margin-left: 10px;
     background-color: aliceblue;
     text-align: center;
-    
-    
+    margin: 2px;
+
+    line-height: 10px;
+    font-size: 20px;
         
 
 }
 
+
+
+
+body {
+    background-color: #ccbfab;
+}
+
+
+nav ul a:hover {
+    background-color: green;
+}
+nav ul a:active {
+    background-color: yellow;
+}
+
+nav ul>li ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+nav ul ul li {
+    float: none;
+    
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+    
+    
+}
