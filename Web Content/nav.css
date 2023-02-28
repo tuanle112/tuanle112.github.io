@@ -63,8 +63,6 @@ nav a {
 }
 
 
-
-
 body {
     background-color: #ccbfab;
 }
@@ -92,4 +90,7 @@ nav>ul>li:hover>ul {
     display: block;
     
     
+}
+.p {
+    text-align: left;
 }
