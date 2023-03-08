@@ -1,0 +1,81 @@
+h1 {
+    color:#1569D0;
+    text-align: center;
+}
+h3 {
+    color:#114C96;
+    
+}
+
+.hangingident {
+    padding-left: 40px;
+    text-indent: -22px;
+}
+@media screen and (min-width: 760px) {
+    img {
+        max-width: 100%;
+        text-align: left;
+    }
+    .grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "photo welcome"
+        "introduction introduction"
+        "paragraph paragraph";
+        
+    }
+.photo {
+    grid-area: photo;
+    padding-top: 20px;
+    padding-left: 10px;
+    max-width: 100%;
+    width: 100%;
+    
+    }
+.welcome {
+    grid-area: welcome;
+    padding-top: 20px;
+    padding-left: 10px;
+    }
+.paragraph {
+    grid-area: paragraph;
+   justify-self: left;
+   padding-left: 10px;
+    }
+
+}
+@media only screen and (max-width:760px) {
+    .grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                "photo"
+                "welcome"
+                "paragraph";
+                
+    }
+    .photo {
+        grid-area: photo;
+        justify-self: center;
+        padding-left: 10px;
+    }
+    img {
+        max-width: 100%;
+        padding-left: 10px;
+    }
+    .welcome {
+        grid-area: welcome;
+        padding-left: 10px;
+    }
+    .paragraph {
+        grid-area: paragraph;
+        padding-left: 10px;
+    }
+
+    
+}
