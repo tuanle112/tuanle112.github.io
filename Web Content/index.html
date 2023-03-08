@@ -2,50 +2,70 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        
         <style>
-            h1{text-align: center;}
-            h4{text-align:center;}
+             h1 {text-align: center;}
+             h4 {text-align: center;}
+            div.a {
+                line-height: 200%;
+                text-align: center;
+            }
+
             
         </style>
-        <header>
-            <h1 style =color:#006633;>Home Page</h1>
-            <link rel="stylesheet" href="Style.css">
-            <link rel="stylesheet" href="nav.css">
-        </header>
-        
+        <!--
+            Title: Web Page Template, and Home Page
+            Use: Visual Studio Code
+            Author: Ben Le
+            Schoo/Term: University of Missouri-Columbia
+            Developed: Jan 31, 2022
+            Tested: Jan 31, 2022
+        -->
         
     </head>
     <body>
         
-        <nav class="TopNav">
-
-            <ul id="TopNav">
-                <li><a href="index.html">Home</a></li>
+        <nav>
+            <input type="checkbox" id="check">
+            
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Learn.html">Learn</a>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Reflection.html">Reflection</a></li>
-                   </ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Reflection">Reflection</a></li>
+                    </ul>
                 <li><a href="Contact.html">Contact</a></li>
                 <li><a href="Reflection.html">Reflection</a></li>
+                </li>
             </ul>
-            
-        </nav>
-        <main>
-            <p><h4>Hello. Welcome to my home page.</h4></p>
-            <p style="text-align: center;"> I created this website is purposedly for my portfolio. I have listed all of my <strong>information, contact, educations, skills, and my strengths and weaknesses</strong>. The goals and objectives of this portfolio website to meant to be providing the company interviewer able to take a look of my history of my education and get to know me better. It could also to be use for introducting to future clients and partner. My current goal is to become a <strong> game designer along with graphic designer</strong> skill. <em>Nice to meet you all.</em></p>
-        </main>
         
-    </body>
-    <footer>
-        <p style="text-align:right"><small>Copyright © 2023</small></p>
-        <nav> 
-            
-
         </nav>
+    </body>
+    <header>
+        <main>
+            <br>
+            <p><h4>Hello. Welcome to my website</h4 class="paragraph"></p>
+            <div class="a"> I created this website is purposedly for my portfolio. I have listed all of my <strong>information, contact, education, skills, strengths and weakness</strong>. The goals and objectives of this portfolio website to meant to be providing the company interviewer able to take a look of my history of my education and get to know me better. It could also to be use for introducting to future clients and partner. My current goal is to become a <strong> game designer along with graphic designer</strong> skill. <em>Nice to meet you all.</em></p>
+            
+            
+            </main>
+
+
+            </div>
+        </main>
+    </header>
+    <footer>
+        <p style="text-align: right;"><small>Copyright © 2023</small></p>
     </footer>
-    
-</html>    
+</html>
