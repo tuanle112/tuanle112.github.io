@@ -7,6 +7,10 @@ h3 {
     
 }
 
+
+.footer {
+    text-align: right;
+}
 .hangingident {
     padding-left: 40px;
     text-indent: -22px;
@@ -15,6 +19,7 @@ h3 {
     img {
         max-width: 100%;
         text-align: left;
+        
     }
     .grid {
     display: grid;
@@ -39,12 +44,17 @@ h3 {
     grid-area: welcome;
     padding-top: 20px;
     padding-left: 10px;
+    
     }
 .paragraph {
     grid-area: paragraph;
    justify-self: left;
    padding-left: 10px;
-    }
+   
+}
+.resume {
+    padding-left: 720px;
+}
 
 }
 @media only screen and (max-width:760px) {
@@ -76,6 +86,8 @@ h3 {
         grid-area: paragraph;
         padding-left: 10px;
     }
-
+    .resume {
+        padding-left: 280px;
+    }
     
 }
